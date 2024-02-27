@@ -50,4 +50,13 @@ page 51002 Printer
             }
         }
     }
+    trigger OnInsertRecord(BelowxRec: Boolean): Boolean
+    var
+        BlankGUID: Guid;
+    begin
+        ;
+        if Rec."Printer UUID" = BlankGUID then
+            Rec."Printer UUID" := System.CreateGuid();
+        exit(true)
+    end;
 }

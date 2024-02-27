@@ -2,14 +2,14 @@ namespace IOI.PrinterConnect;
 
 page 51000 Client
 {
-    APIGroup = 'printerConnect';
-    APIPublisher = 'ioi';
+    APIPublisher = 'ioi'; //bctech
+    APIGroup = 'printerConnect'; //demo
     APIVersion = 'v1.0';
     ApplicationArea = All;
     Caption = 'client';
     DelayedInsert = true;
-    EntityName = 'client';
-    EntitySetName = 'clients';
+    EntityName = 'client'; //carModel
+    EntitySetName = 'clients'; // carModels
     PageType = API;
     SourceTable = "Client PC";
 
@@ -38,4 +38,13 @@ page 51000 Client
             }
         }
     }
+    trigger OnInsertRecord(BelowxRec: Boolean): Boolean
+    var
+        BlankGUID: Guid;
+    begin
+        ;
+        if Rec."Client UUID" = BlankGUID then
+            Rec."Client UUID" := System.CreateGuid();
+        exit(true)
+    end;
 }

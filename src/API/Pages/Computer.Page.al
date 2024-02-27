@@ -42,4 +42,13 @@ page 51001 Computer
             }
         }
     }
+    trigger OnInsertRecord(BelowxRec: Boolean): Boolean
+    var
+        BlankGUID: Guid;
+    begin
+        ;
+        if Rec."Computer UUID" = BlankGUID then
+            Rec."Computer UUID" := System.CreateGuid();
+        exit(true)
+    end;
 }
