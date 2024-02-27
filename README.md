@@ -1,2 +1,2 @@
 # PrinterConnect
-Manage remote ZPL Printer Connections unsed in repo Marquardt.Informatik.PrintConnect
+Manage remote ZPL Printer Connections used in repo Marquardt.Informatik.PrintConnect
