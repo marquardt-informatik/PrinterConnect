@@ -1,6 +1,6 @@
 namespace IOI.PrinterConnect;
 
-table 51003 "License Key"
+table 51003 "License Key PC"
 {
     Caption = 'License Key';
     DataClassification = ToBeClassified;
@@ -32,13 +32,4 @@ table 51003 "License Key"
             Clustered = true;
         }
     }
-
-
-    local procedure MyProcedure()
-    var
-        myInt: Integer;
-    begin
-
-    end;
-
 }

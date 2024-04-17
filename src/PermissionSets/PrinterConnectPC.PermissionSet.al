@@ -1,7 +1,7 @@
 namespace IOI.PrinterConnect;
 using PrinterConnect.PrinterConnect;
 
-permissionset 51000 PrinterConnect
+permissionset 51000 "PrinterConnect PC"
 {
     Assignable = true;
     Permissions = tabledata "Client PC" = RIMD,
@@ -10,7 +10,7 @@ permissionset 51000 PrinterConnect
         table "Printer PC" = X,
         tabledata "Computer PC" = RIMD,
         table "Computer PC" = X,
-        table "License Key" = x,
-        tabledata "License Key" = RIMD,
-        codeunit "Auxillary Service" = X;
+        table "License Key PC" = x,
+        tabledata "License Key PC" = RIMD,
+        codeunit "Auxillary Service PC" = X;
 }

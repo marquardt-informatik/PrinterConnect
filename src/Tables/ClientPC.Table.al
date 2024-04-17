@@ -42,7 +42,7 @@ table 51000 "Client PC"
 
     procedure GetListofLicenses() licenseKeys: List of [Text]
     var
-        LicenseKey: Record "License Key";
+        LicenseKey: Record "License Key PC";
     begin
         LicenseKey.Reset();
         LicenseKey.SetRange("Client UUID", "Client UUID");
